@@ -12,26 +12,26 @@
             <img src="img/kG.png" alt="logo_kGian">
         </a>
     </header>
-    <main class="encriptador">
+    <div class="encriptador">
         <section class="encriptador_titulo">
             <h1 class="encriptador_titulo_principal"> Ingrese el texto aqui </h1>
         </section>
-    </main>
+    </div>
     <div class="container">
         <div class="encriptar">
-            <input class="texto" id = "texto_usuario" class="container_input">
+            <textarea class="texto" cols="30" rows="10" id = "texto_usuario"></textarea>
         </div>
     </div>
     <div class="advertencias">
         <p>Solo letras minusculas y sin acentos</p>
     </div>
     <div class="botones">
-        <button onclick="encriptar();" class="container_boton">Encriptar</button>
-        <button onclick="desencriptar();" class="container_boton">Desencriptar</button>
+        <button onclick="encriptar();" class="boton_e">Encriptar</button>
+        <button onclick="desencriptar();" class="boton_des">Desencriptar</button>
     </div>
     <div class="encriptado">
         <img src="img/Muñeco.png" alt="muñeco" />
-        <div class="mensaje_enceiptado">
+        <div class="mensaje_encriptado">
             <h2 class="titulo_mensaje">Ningún mensaje fue encontrado</h2>
             <p class="indicacion">Ingresa el texto que deseas encriptar o desencriptar</p>
         </div>
