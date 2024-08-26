@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de textos</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <a class="header_logo_imagen">
-            <img src="img/kG.png" alt="logo_kGian">
-        </a>
-    </header>
-    <div class="encriptador">
-        <section class="encriptador_titulo">
-            <h1 class="encriptador_titulo_principal"> Ingrese el texto aqui </h1>
-        </section>
-    </div>
-    <div class="container">
-        <div class="container_encriptar">
-            <textarea class="texto" cols="10" rows="10" id = "texto_usuario"></textarea>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de textos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a class="header_logo_imagen">
+                <img src="img/kG.png" alt="logo_kGian">
+            </a>
+        </header>
+        <div class="encriptador">
+            <section class="encriptador_titulo">
+                <h1 class="encriptador_titulo_principal"> Ingrese el texto aqui </h1>
+            </section>
         </div>
-    </div>
-    <div class="advertencias">
-        <p>Solo letras minusculas y sin acentos</p>
-    </div>
-    <div class="botones">
-        <button onclick="encriptar();" class="boton_e">Encriptar</button>
-        <button onclick="desencriptar();" class="boton_des">Desencriptar</button>
-    </div>
-    <div class="encriptado">
-        <img src="img/Muñeco.png" alt="muñeco" />
-        <div class="mensaje_encriptado">
-            <h2 class="titulo_mensaje">Ningún mensaje fue encontrado</h2>
-            <p class="indicacion">Ingresa el texto que deseas encriptar o desencriptar</p>
+        <div class="container">
+            <div class="container_encriptar">
+                <textarea 
+                    name="texto" 
+                    class="texto" 
+                    id = "texto" 
+                    cols="30" 
+                    rows="10" 
+                ></textarea>
+                <div class="advertencias">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptar();" class="boton_e">Encriptar</button>
+                    <button onclick="desencriptar();" class="boton_des">Desencriptar</button>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
-<script src="app.js"></script>
+        <div class="encriptado">
+            <img src="img/Muñeco.png" alt="muñeco" />
+            <div class="mensaje_encriptado">
+                <h2 class="titulo_mensaje">Ningún mensaje fue encontrado</h2>
+                <p class="indicacion">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+        <script src="app.js" defer></script>
+    </body>
 </html>
