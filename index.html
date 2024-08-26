@@ -18,7 +18,9 @@
         </section>
     </main>
     <div class="container">
-        <input class="texto" id = "texto_usuario" class="container_input">
+        <div class="encriptar">
+            <input class="texto" id = "texto_usuario" class="container_input">
+        </div>
     </div>
     <div class="advertencias">
         <p>Solo letras minusculas y sin acentos</p>
@@ -26,6 +28,13 @@
     <div class="botones">
         <button onclick="encriptar();" class="container_boton">Encriptar</button>
         <button onclick="desencriptar();" class="container_boton">Desencriptar</button>
+    </div>
+    <div class="encriptado">
+        <img src="img/Muñeco.png" alt="muñeco" />
+        <div class="mensaje_enceiptado">
+            <h2 class="titulo_mensaje">Ningún mensaje fue encontrado</h2>
+            <p class="indicacion">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
     </div>
 </body>
 </html>
