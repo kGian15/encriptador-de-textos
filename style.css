@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --color-primario: #e0c9c9;
+    --color-primario: #f3ccfcea;
     --color-secundario: #000000;
-    --color-terciario: #840c3c;
+    --color-terciario: #960f96;
     --fuente-montserrat: "Montserrat", sans-serif;
     --fuente-KronaOne: "Krona One", sans-serif;
     --color-hover: #272727;
+    --color-container: #be63ca;
 }
-
 *{
     padding: 0;
-    margin: 2;  /* agrega un margen para centrar los cuadrados en la pantalla */
+    margin: 1;  /* agrega un margen para centrar los cuadrados en la pantalla */
 }
 body{
     background-color: var(--color-primario);
@@ -25,70 +25,106 @@ body{
     justify-content: left;
 }
 .encriptador_titulo_principal{
-    padding-left: 10%;
+    padding-left: 8%;
     text-align: left;
     font-size: 1.75rem;
     font-family: var(--fuente-KronaOne);
 }
 .container{
     position: relative;
-    width: 50%;
-    height: 70%;
-    background: var(--color-primario);
+    width: 40vw;
+    height: 80vh;
 }
 .texto{
     position: absolute;
-    width: 30%;
-    height: 50%;
-    left: 6%;
-    top: 8%;
+    width: 90%;
+    height: 75%;
+    left: 8%;
+    top: 1%;
     border: none;
+    border-radius: 2%;
     font-family: var(--fuente-montserrat);
     font-weight: 300;
-    font-size: 1.75rem;
+    font-size: 1rem;
     line-height: 100%;
-    background-color: var(--color-secundario);
+    background-color: var(--color-container);
 }
 .advertencias{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0%;
-    gap: 1%;
+    padding: 35%;
+    gap: 10%;
     position: absolute;
     width: 20%;
-    height: 5%;
-    top: 10%;
-    font-size: 1 rem;
+    right: 30%;
+    top: 9%;
+    font-size: 0.75rem;
     font-family: var(--fuente-montserrat);
 }
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0% 0%;
+    position: absolute;
+    width: 50%;
+    top: 82%;
+    left: 10%;
+}
 .boton_e{
+    align-items: center;
     text-align: center;
     justify-content: center;
     font-family: var(--fuente-KronaOne);
     font-size: 1rem;
-    border-radius: 16px;
-    background: var(--color-terciario);
-    padding: 14px 30px;
-    width: 12%;
+    border-radius: 8px;
+    background-color: var(--color-terciario);
+    padding: 10px 30px;
+    width: 20%;
     font-weight: 700;
     border: none;
     margin-top: 1rem;
+    gap: 8px;
 }
 .boton_des{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     text-align: center;
     justify-content: center;
     font-family: var(--fuente-KronaOne);
     font-size: 1rem;
-    border-radius: 16px;
+    border-radius: 8px;
     background: var(--color-terciario);
-    padding: 14px 30px;
-    width: 12%;
+    padding: 10px 15px;
+    width: 25%;
     font-weight: 700;
     border: none;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 .encriptado{
-
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 70%;
+    top: 10%;
+    background: var(--color-primario);
+    border-radius: 5px;
 }
+.mensaje_encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+    gap: 5px;
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    text-align: center;
+}
+
 
