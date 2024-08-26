@@ -29,22 +29,42 @@ body{
     text-align: left;
     font-size: 1.75rem;
     font-family: var(--fuente-KronaOne);
-
 }
-.container_input {
-    padding: 1rem;
-    width: 40%;
-    border-radius: 16px;
-    background-color: #FFF;
-    font-size: 1rem;
-    font-family: var(--fuente-montserrat)
+.container{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    background: var(--color-primario);
+}
+.texto{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    left: 6%;
+    top: 8%;
+    border: none;
+    font-family: var(--fuente-montserrat);
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 100%;
+    background-color: var(--color-secundario);
 }
 .advertencias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    gap: 1%;
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    top: 10%;
     font-size: 1 rem;
     font-family: var(--fuente-montserrat);
 }
-.container_boton{
+.boton_e{
     text-align: center;
+    justify-content: center;
     font-family: var(--fuente-KronaOne);
     font-size: 1rem;
     border-radius: 16px;
@@ -54,5 +74,21 @@ body{
     font-weight: 700;
     border: none;
     margin-top: 1rem;
+}
+.boton_des{
+    text-align: center;
+    justify-content: center;
+    font-family: var(--fuente-KronaOne);
+    font-size: 1rem;
+    border-radius: 16px;
+    background: var(--color-terciario);
+    padding: 14px 30px;
+    width: 12%;
+    font-weight: 700;
+    border: none;
+    margin-top: 1rem;
+}
+.encriptado{
+
 }
 
