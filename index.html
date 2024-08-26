@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header_logo_imagen">
+            <img src="img/kG.png" alt="logo_kGian">
+        </a>
+    </header>
+    <main class="encriptador">
+        <section class="encriptador_titulo">
+            <h1 class="encriptador_titulo_principal"> Ingrese el texto aqui </h1>
+        </section>
+    </main>
+    <div class="container">
+        <input type="words" id = "texto_usuario" class="container_input">
+        <div class="container__botones">
+            <p class="advertencias"> Solo letras minusculas y sin acentos</p>
+            <button onclick="encriptar();" class="container_boton">Encriptar</button>
+            <button onclick="desencriptar();" class="container_boton">Desencriptar</button>
+        </div>
+    </div>
+</body>
+</html>
