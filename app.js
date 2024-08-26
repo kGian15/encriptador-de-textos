@@ -1,5 +1,5 @@
 function encriptacion() {
-    let texto = document.getElementById("texto_usuario").value;
+    let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo_mensaje");
     let indicacion = document.getElementById("indicacion");
     let muñeco = document.getElementById("muñeco");
@@ -12,7 +12,7 @@ function encriptacion() {
       .replace(/u/gi, "ufat");
   
     if (texto.length != 0) {
-      document.getElementById("texto_usuario").value = textoCifrado;
+      document.getElementById("texto").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
       parrafo.textContent = "";
     } else {
