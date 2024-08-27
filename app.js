@@ -14,18 +14,18 @@ function encriptacion() {
     if (texto.length != 0) {
       document.getElementById("texto").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
-      parrafo.textContent = "";
+      indicacion.textContent = "";
     } else {
       muñeco.src = "./img/muñeco.png";
       tituloMensaje.textContent = "Ningún mensaje fue encontrado";
-      parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+      indicacion.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
     }
   }
   
   function desencriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
-    let parrafo = document.getElementById("parrafo");
+    let indicacion = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
   
     let textoCifrado = texto
@@ -42,6 +42,6 @@ function encriptacion() {
       } else {
         muñeco.src = "./img/muñeco.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
-        parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+        indicacion.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
     }
   }
