@@ -1,6 +1,6 @@
-function encriptacion() {
+function encriptar() {
     let texto = document.getElementById("texto").value;
-    let tituloMensaje = document.getElementById("titulo_mensaje");
+    let mensaje_muñeco = document.getElementById("titulo_mensaje");
     let indicacion = document.getElementById("indicacion");
     let muñeco = document.getElementById("muñeco");
   
@@ -13,19 +13,19 @@ function encriptacion() {
   
     if (texto.length != 0) {
       document.getElementById("texto").value = textoCifrado;
-      tituloMensaje.textContent = "Texto encriptado con éxito";
+      mensaje_muñeco.textContent = "Texto encriptado con éxito";
       indicacion.textContent = "";
     } else {
       muñeco.src = "./img/muñeco.png";
-      tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+      mensaje_muñeco.textContent = "Ningún mensaje fue encontrado";
       indicacion.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
     }
   }
   
   function desencriptar() {
     let texto = document.getElementById("texto").value;
-    let tituloMensaje = document.getElementById("titulo-mensaje");
-    let indicacion = document.getElementById("parrafo");
+    let mensaje_muñeco = document.getElementById("titulo_mensaje");
+    let indicacion = document.getElementById("indicacion");
     let muñeco = document.getElementById("muñeco");
   
     let textoCifrado = texto
@@ -37,11 +37,11 @@ function encriptacion() {
     
       if (texto.length != 0) {
         document.getElementById("texto").value = textoCifrado;
-        tituloMensaje.textContent = "Texto desencriptado con éxito";
-        parrafo.textContent = "";
+        mensaje_muñeco.textContent = "Texto desencriptado con éxito";
+        indicacion.textContent = "";
       } else {
         muñeco.src = "./img/muñeco.png";
-        tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+        mensaje_muñeco.textContent = "Ningún mensaje fue encontrado";
         indicacion.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
     }
   }
